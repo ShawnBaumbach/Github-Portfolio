@@ -1,0 +1,9 @@
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 500px 500px;
+  }
+  
+  .grid-item {
+    font-size: 16px;
+    text-align: left;
+  }

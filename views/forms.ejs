@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="javascripts/navigation.js"></script>
+    <link rel="stylesheet" href="/stylesheets/grids.css">
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <meta charset="UTF-8">
+    <title>Code Sample</title>
+</head>
+<body>
+    <div id="navigation" class="navigation"></div>
+    <div style="margin-left: 200px; margin-top: 25px">
+            <h2>Form & MongoDB Sample</h2>
+        <div class="grid-container">   
+            <div class="grid-item">
+                    <h3>Data</h3>
+                    <form action="forms/form"  method="POST">
+                        <input type="text" placeholder="Name" name="name">
+                        <input type="text" placeholder="Description" name="quote">
+                        <button type="submit">Submit</button>
+                    </form>
+            </div>
+            <div class="grid-item">
+                <h3>Database Collection</h3>
+                    <ul class="quotes">
+                        <% for(var i=0; i<quotes.length; i++) { %>
+                            <li class="quote">
+                            <span><%= quotes[i].name %></span>
+                            <span><%= quotes[i].quote %></span>
+                            </li>
+                        <% } %>
+                    </ul>
+            </div>
+            <div class="grid-item">
+                <br>
+                <p>Enter the two datafields and click submit. Both entries will be added to a mongoDB collection. The collection is then automatically displayed on the right.</p>
+                        
+            </div>
+        </div>
+    </div>
+</body>
+</html>

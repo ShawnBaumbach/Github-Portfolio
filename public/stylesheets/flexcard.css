@@ -1,0 +1,95 @@
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+    max-width: 400px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 2;
+}
+li {
+ width: 400px;
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: center;
+ text-align: center;
+}
+li .button {
+margin-top:auto;
+}
+li h2 {
+    display: flex;
+    text-align: center;
+    font: "Lucida Grande", Helvetica, Arial, sans-serif;
+    align-items: flex-start;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+li h4 {
+    line-height: .5;
+    margin-top: 0;
+    display: flex;
+    color: gray;
+    text-align: center;
+    align-items: flex-start;  
+    font: "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: blue;
+    flex-shrink: 2;
+    padding: 0px;
+}
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.li hr {
+    height: 1px;
+    /* Set the hr color */
+    color: rgb(218, 218, 218); /* old IE */
+    background-color: rgb(218, 218, 218); /* Modern Browsers */
+}
+.description {
+    padding:0 0 1em ;
+	margin-bottom:1em;
+	border-bottom:1px solid rgb(129, 129, 129);
+	font-weight:normal;
+}
+.cardbuttons {
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    border-radius: 10%;
+    max-width: 25%;
+    text-align: center;
+    align-items: flex-end;  
+}
+.cardbuttonsdiv{
+    margin-top:16px;
+    margin-bottom:16px;
+    align-items: flex-end;  
+}
+.icons {
+    align-items: flex-end;  
+    width: 32px;
+}

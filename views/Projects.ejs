@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="javascripts/navigation.js"></script>
+    <script defer src="javascripts/mail.js"></script>
+    <link rel="stylesheet" href="/stylesheets/grids.css">
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/smallCards.css">
+    <meta charset="UTF-8">
+    <title>Code Sample</title>
+</head>
+<body >
+    <div id="navigation" class="navigation"></div>
+    <div class="projects">
+        <% for(var i=0; i<git.length; i++) { %>
+            <ul class="card" style="margin-right: 10px;">
+                <li><div class="cardtop">
+                    <img class="image" src=<%="https://raw.githubusercontent.com/ShawnBaumbach/" + git[i].name  + "/local/sampleImageSmall.jpg" %> alt="me">
+                    <div style="display: flex;">
+                        <h3><%= git[i].name %></h3>
+                        <div style="margin-left: auto;">
+                            <a href=<%= git[i].html_url %> </a><img class="icons" src="images/github.png" alt="github"></a>
+                            <a href="https://www.linkedin.com/in/shawn-baumbach/"><img class="icons" src="images/linkedin.png" alt="linkedin"></a>
+                            <a href="/Contact"><img class="icons" src="images/gmail.png" alt="mail"></a>
+                        </div>
+                    </div>
+                    <p class="description"><%= git[i].description %></p>
+                </div></li>
+                <li><div class="cardbottom">
+                    <div style="color:gray; font-size:12px; margin-bottom:8px;">
+                        <% for(var n=0; n<git[i].topics.length; n++) { %>
+                        <%= "#" + git[i].topics[n]; %>
+                        <% } %></div>
+                    <div style="display: flex;">
+                        <div class="cardbuttonsdiv"> <a class="cardbuttons" href="/Projects">View</a></div>  
+                        <div style="margin-left: auto; margin-right: 8px; color:gray; font-size:12px; "><%= git[i].updated_at.substring(0, 10) %></div>
+                    </div>
+                </div></li>
+            </ul>
+        <% } %>
+    </div>
+</body>
+</html>

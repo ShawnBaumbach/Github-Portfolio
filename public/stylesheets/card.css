@@ -1,0 +1,93 @@
+.card {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+    max-width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 50%;
+}
+.card h2 {
+    display: block;
+    text-align: center;
+    font: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.card h4 {
+    line-height: .5;
+    margin-top: 0;
+    display: block;
+    color: gray;
+    text-align: center;
+    font: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.card p {
+    display: block;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.card hr {
+    height: 1px;
+    /* Set the hr color */
+    color: rgb(218, 218, 218); /* old IE */
+    background-color: rgb(218, 218, 218); /* Modern Browsers */
+}
+.cardfooter {
+    text-align: center;
+}
+.icons {
+    display: flex;
+    width: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 0;
+    align-items: center;
+    border: none;
+}
+.iconList {
+    display: flex;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+.cardbuttons {
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    display: inline; /* Hides the bullet */
+    padding: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 16px;
+    border-radius: 10%;
+}
+.projects {
+    max-width: 1200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.listfooter {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: auto;
+
+}
